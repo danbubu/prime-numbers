@@ -1,0 +1,20 @@
+echo "# prime-numbers" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/danbubu/prime-numbers.git
+git push -u origin main
+
+#number to be checked
+print('Input potential prime number to be determined')
+num = int(input())
+#to check if n is greater than 1
+if num > 1:
+    for i in range(2, int(num/2)+1) :
+        if (num % i) == 0: continue
+    print(num, "is a prime number")
+else:
+    print(num, 'is not a prime number')
+    #if number is less than 1
+    print(num, 'is not a prime number')
